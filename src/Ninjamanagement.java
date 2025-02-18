@@ -8,6 +8,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -53,7 +54,7 @@ public class Ninjamanagement {
     public static void displayFiltered(List<Ninja> logs, int numar) {
         // Filtrarea mai mare putere
         List<Ninja> filteredNinja = logs.stream()
-                .filter(ninja -> ninja.getKraftpunkte() >= numar) // Filtrare
+                .filter(ninja -> ninja.getKraftpunkte() > numar) // Filtrare
                 .collect(Collectors.toList());  // Colectează rezultatele într-o listă
 
         // Dacă există jocuri filtrate, le afișăm
@@ -62,6 +63,25 @@ public class Ninjamanagement {
             // Iterează prin jocuri și afișează echipele, data și locul jocului
             for (Ninja ninja : filteredNinja) {
                 System.out.println(ninja.getCharaktername());
+            }
+        } else {
+            System.out.println("Keine gefunden.");
+        }
+    }
+
+    public static void displayJonin(List<Ninja> logs) {
+        // Filtrarea jocurilor care se află în orașul specificat și după data minimă
+        List<Ninja> filteredGames = logs.stream()
+                .filter(ninja -> ninja.getStufe().toString() == "Jonin")
+                .sorted(Comparator.comparing(Ninja::getDatum).reversed()) // Sortare crescatoare
+                .collect(Collectors.toList());
+
+        // Dacă există jocuri filtrate, le afișăm
+        if (!filteredGames.isEmpty()) {
+            System.out.println("Jonini:");
+            for (Ninja ninja : filteredGames) {
+                System.out.println( ninja.getDatum() + ":" + ninja.getCharaktername() + " " + ninja.getBeschreibung());
+                System.out.println("----------------------------------");
             }
         } else {
             System.out.println("Keine gefunden.");
@@ -86,5 +106,6 @@ public class Ninjamanagement {
 
 
         displayFiltered(logs, numar);
+        displayJonin(logs);
     }
 }
