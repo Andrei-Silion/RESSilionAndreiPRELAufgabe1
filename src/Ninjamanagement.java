@@ -5,12 +5,12 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -88,6 +88,38 @@ public class Ninjamanagement {
         }
     }
 
+    public static Map<String, Long> calculate(List<Ninja> fList) {
+        return fList.stream()
+                .collect(Collectors.groupingBy(fallakten -> fallakten.getStufe().toString(), Collectors.counting()));
+    }
+
+    // Salvarea rezultatelor într-un fișier
+    public static void saveResultsToFile(Map<String, Long> eventCounts, String filePath) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            eventCounts.entrySet().stream()
+                    // Sortăm mai întâi după numărul de evenimente (descrescător), apoi alfabetic
+                    .sorted((entry1, entry2) -> {
+                        int countComparison = entry2.getValue().compareTo(entry1.getValue());
+                                                                //crescator   int countComparison = entry1.getValue().compareTo(entry2.getValue());
+                        if (countComparison != 0) {
+                            return countComparison;
+                        } else {
+                            return entry1.getKey().compareTo(entry2.getKey()); // invers alfabetic return entry2.getKey().compareTo(entry1.getKey());
+                        }
+                    })
+                    .forEach(entry -> {
+                        try {
+                            writer.write(entry.getKey() + " %" + entry.getValue());
+                            writer.newLine();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
         Ninjamanagement manager = new Ninjamanagement();
         Scanner scanner = new Scanner(System.in);
@@ -107,5 +139,12 @@ public class Ninjamanagement {
 
         displayFiltered(logs, numar);
         displayJonin(logs);
+
+        Map<String, Long> eventCounts = calculate(logs);
+
+        String outputFilePath = "C:/Users/silic/IdeaProjects/RESSilionAndreiPRELAufgabe1/src/ergebnis.txt";
+        saveResultsToFile(eventCounts, outputFilePath);
+
+        System.out.println("Rezultatele au fost salvate în fișierul 'ergebnis.txt'.");
     }
 }
