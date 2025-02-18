@@ -1,0 +1,242 @@
+<logs>
+  <log>
+    <Id>1</Id>
+    <Charaktername>Konan</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat einen gefährlichen Gegner besiegt</Beschreibung>
+    <Datum>2004-09-08</Datum>
+    <Kraftpunkte>2667.78</Kraftpunkte>
+  </log>
+  <log>
+    <Id>2</Id>
+    <Charaktername>Hiruzen Sarutobi</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat ein Jutsu gemeistert</Beschreibung>
+    <Datum>2008-03-12</Datum>
+    <Kraftpunkte>2560.78</Kraftpunkte>
+  </log>
+  <log>
+    <Id>3</Id>
+    <Charaktername>Gaara</Charaktername>
+    <Stufe>Jonin</Stufe>
+    <Beschreibung>Hat einen Verbündeten gerettet</Beschreibung>
+    <Datum>2013-02-12</Datum>
+    <Kraftpunkte>7035.22</Kraftpunkte>
+  </log>
+  <log>
+    <Id>4</Id>
+    <Charaktername>Gaara</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat eine geheime Mission erfolgreich abgeschlossen</Beschreibung>
+    <Datum>2009-11-09</Datum>
+    <Kraftpunkte>1140.52</Kraftpunkte>
+  </log>
+  <log>
+    <Id>5</Id>
+    <Charaktername>Gaara</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat einen feindlichen Angriff abgewehrt</Beschreibung>
+    <Datum>2018-12-13</Datum>
+    <Kraftpunkte>3893.89</Kraftpunkte>
+  </log>
+  <log>
+    <Id>6</Id>
+    <Charaktername>Kankuro</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat eine Falle für den Feind aufgestellt</Beschreibung>
+    <Datum>2008-05-23</Datum>
+    <Kraftpunkte>8675.15</Kraftpunkte>
+  </log>
+  <log>
+    <Id>7</Id>
+    <Charaktername>Sakura Haruno</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat ein Jutsu gemeistert</Beschreibung>
+    <Datum>2002-10-03</Datum>
+    <Kraftpunkte>8525.7</Kraftpunkte>
+  </log>
+  <log>
+    <Id>8</Id>
+    <Charaktername>Danzo Shimura</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat einen Spion enttarnt</Beschreibung>
+    <Datum>2016-03-12</Datum>
+    <Kraftpunkte>7302.17</Kraftpunkte>
+  </log>
+  <log>
+    <Id>9</Id>
+    <Charaktername>Naruto Uzumaki</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat einen feindlichen Angriff abgewehrt</Beschreibung>
+    <Datum>2004-04-16</Datum>
+    <Kraftpunkte>139.64</Kraftpunkte>
+  </log>
+  <log>
+    <Id>10</Id>
+    <Charaktername>Neji Hyuga</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat einen feindlichen Angriff abgewehrt</Beschreibung>
+    <Datum>2015-04-25</Datum>
+    <Kraftpunkte>7451.86</Kraftpunkte>
+  </log>
+  <log>
+    <Id>11</Id>
+    <Charaktername>Danzo Shimura</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat einen Überraschungsangriff überlebt</Beschreibung>
+    <Datum>2021-01-21</Datum>
+    <Kraftpunkte>3554.24</Kraftpunkte>
+  </log>
+  <log>
+    <Id>12</Id>
+    <Charaktername>Jiraiya</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat einen Verbündeten gerettet</Beschreibung>
+    <Datum>2011-08-22</Datum>
+    <Kraftpunkte>9018.04</Kraftpunkte>
+  </log>
+  <log>
+    <Id>13</Id>
+    <Charaktername>Sasuke Uchiha</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat ein Jutsu gemeistert</Beschreibung>
+    <Datum>2009-12-05</Datum>
+    <Kraftpunkte>9154.78</Kraftpunkte>
+  </log>
+  <log>
+    <Id>14</Id>
+    <Charaktername>Deidara</Charaktername>
+    <Stufe>Jonin</Stufe>
+    <Beschreibung>Hat eine geheime Mission erfolgreich abgeschlossen</Beschreibung>
+    <Datum>2004-10-23</Datum>
+    <Kraftpunkte>5003.98</Kraftpunkte>
+  </log>
+  <log>
+    <Id>15</Id>
+    <Charaktername>Kiba Inuzuka</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat einen feindlichen Angriff abgewehrt</Beschreibung>
+    <Datum>2021-01-17</Datum>
+    <Kraftpunkte>2405.0</Kraftpunkte>
+  </log>
+  <log>
+    <Id>16</Id>
+    <Charaktername>Orochimaru</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat ein Jutsu gemeistert</Beschreibung>
+    <Datum>2012-01-26</Datum>
+    <Kraftpunkte>4980.86</Kraftpunkte>
+  </log>
+  <log>
+    <Id>17</Id>
+    <Charaktername>Konan</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat eine wichtige Strategie entwickelt</Beschreibung>
+    <Datum>2018-05-24</Datum>
+    <Kraftpunkte>8891.53</Kraftpunkte>
+  </log>
+  <log>
+    <Id>18</Id>
+    <Charaktername>Gaara</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat einen Verbündeten gerettet</Beschreibung>
+    <Datum>2013-07-10</Datum>
+    <Kraftpunkte>347.39</Kraftpunkte>
+  </log>
+  <log>
+    <Id>19</Id>
+    <Charaktername>Kankuro</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat ein Jutsu gemeistert</Beschreibung>
+    <Datum>2018-07-16</Datum>
+    <Kraftpunkte>7928.61</Kraftpunkte>
+  </log>
+  <log>
+    <Id>20</Id>
+    <Charaktername>Tsunade</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat eine geheime Mission erfolgreich abgeschlossen</Beschreibung>
+    <Datum>2020-01-24</Datum>
+    <Kraftpunkte>3347.91</Kraftpunkte>
+  </log>
+  <log>
+    <Id>21</Id>
+    <Charaktername>Temari</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat eine geheime Mission erfolgreich abgeschlossen</Beschreibung>
+    <Datum>2010-08-24</Datum>
+    <Kraftpunkte>4701.79</Kraftpunkte>
+  </log>
+  <log>
+    <Id>22</Id>
+    <Charaktername>Neji Hyuga</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat eine wichtige Strategie entwickelt</Beschreibung>
+    <Datum>2011-04-23</Datum>
+    <Kraftpunkte>3439.19</Kraftpunkte>
+  </log>
+  <log>
+    <Id>23</Id>
+    <Charaktername>Kankuro</Charaktername>
+    <Stufe>Genin</Stufe>
+    <Beschreibung>Hat eine geheime Mission erfolgreich abgeschlossen</Beschreibung>
+    <Datum>2010-05-10</Datum>
+    <Kraftpunkte>5914.67</Kraftpunkte>
+  </log>
+  <log>
+    <Id>24</Id>
+    <Charaktername>Hinata Hyuga</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat einen Spion enttarnt</Beschreibung>
+    <Datum>2011-02-07</Datum>
+    <Kraftpunkte>5196.99</Kraftpunkte>
+  </log>
+  <log>
+    <Id>25</Id>
+    <Charaktername>Naruto Uzumaki</Charaktername>
+    <Stufe>Jonin</Stufe>
+    <Beschreibung>Hat einen Verbündeten gerettet</Beschreibung>
+    <Datum>2017-04-07</Datum>
+    <Kraftpunkte>4934.38</Kraftpunkte>
+  </log>
+  <log>
+    <Id>26</Id>
+    <Charaktername>Hashirama Senju</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat einen Verbündeten gerettet</Beschreibung>
+    <Datum>2007-10-27</Datum>
+    <Kraftpunkte>1123.77</Kraftpunkte>
+  </log>
+  <log>
+    <Id>27</Id>
+    <Charaktername>Gaara</Charaktername>
+    <Stufe>Chunin</Stufe>
+    <Beschreibung>Hat einen Verbündeten gerettet</Beschreibung>
+    <Datum>2011-08-26</Datum>
+    <Kraftpunkte>1640.34</Kraftpunkte>
+  </log>
+  <log>
+    <Id>28</Id>
+    <Charaktername>Gaara</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat eine Falle für den Feind aufgestellt</Beschreibung>
+    <Datum>2007-08-10</Datum>
+    <Kraftpunkte>4957.24</Kraftpunkte>
+  </log>
+  <log>
+    <Id>29</Id>
+    <Charaktername>Minato Namikaze</Charaktername>
+    <Stufe>Jonin</Stufe>
+    <Beschreibung>Hat einen Spion enttarnt</Beschreibung>
+    <Datum>2020-03-07</Datum>
+    <Kraftpunkte>4142.54</Kraftpunkte>
+  </log>
+  <log>
+    <Id>30</Id>
+    <Charaktername>Shikamaru Nara</Charaktername>
+    <Stufe>Kage</Stufe>
+    <Beschreibung>Hat einen Überraschungsangriff überlebt</Beschreibung>
+    <Datum>2000-08-29</Datum>
+    <Kraftpunkte>122.17</Kraftpunkte>
+  </log>
+</logs>
