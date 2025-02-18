@@ -57,10 +57,10 @@ public class Ninjamanagement {
                 .filter(ninja -> ninja.getKraftpunkte() > numar) // Filtrare
                 .collect(Collectors.toList());  // Colectează rezultatele într-o listă
 
-        // Dacă există jocuri filtrate, le afișăm
+        // Dacă există le afișăm
         if (!filteredNinja.isEmpty()) {
-            System.out.println("Kraftpunkte >= " + numar + ":");
-            // Iterează prin jocuri și afișează echipele, data și locul jocului
+            System.out.println("Kraftpunkte > " + numar + ":");
+
             for (Ninja ninja : filteredNinja) {
                 System.out.println(ninja.getCharaktername());
             }
@@ -68,9 +68,11 @@ public class Ninjamanagement {
             System.out.println("Keine gefunden.");
         }
     }
-
+    /**
+     * .collect colectam Joninii in lista
+     */
     public static void displayJonin(List<Ninja> logs) {
-        // Filtrarea jocurilor care se află în orașul specificat și după data minimă
+        // Filtrarea Jonini
         List<Ninja> filteredGames = logs.stream()
                 .filter(ninja -> ninja.getStufe().toString() == "Jonin")
                 .sorted(Comparator.comparing(Ninja::getDatum).reversed()) // Sortare crescatoare
@@ -90,7 +92,7 @@ public class Ninjamanagement {
 
     public static Map<String, Long> calculate(List<Ninja> fList) {
         return fList.stream()
-                .collect(Collectors.groupingBy(fallakten -> fallakten.getStufe().toString(), Collectors.counting()));
+                .collect(Collectors.groupingBy(ninja -> ninja.getStufe().toString(), Collectors.counting()));
     }
 
     // Salvarea rezultatelor într-un fișier
@@ -100,16 +102,16 @@ public class Ninjamanagement {
                     // Sortăm mai întâi după numărul de evenimente (descrescător), apoi alfabetic
                     .sorted((entry1, entry2) -> {
                         int countComparison = entry2.getValue().compareTo(entry1.getValue());
-                                                                //crescator   int countComparison = entry1.getValue().compareTo(entry2.getValue());
+
                         if (countComparison != 0) {
                             return countComparison;
                         } else {
-                            return entry1.getKey().compareTo(entry2.getKey()); // invers alfabetic return entry2.getKey().compareTo(entry1.getKey());
+                            return entry1.getKey().compareTo(entry2.getKey());
                         }
                     })
                     .forEach(entry -> {
                         try {
-                            writer.write(entry.getKey() + " %" + entry.getValue());
+                            writer.write(entry.getKey() + "%" + entry.getValue());
                             writer.newLine();
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -119,7 +121,9 @@ public class Ninjamanagement {
             e.printStackTrace();
         }
     }
-
+    /**
+     * @numar citim numar si afisam putere mai mare decat el
+     */
     public static void main(String[] args) {
         Ninjamanagement manager = new Ninjamanagement();
         Scanner scanner = new Scanner(System.in);
