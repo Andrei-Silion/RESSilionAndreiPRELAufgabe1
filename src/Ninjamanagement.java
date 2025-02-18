@@ -146,9 +146,9 @@ public class Ninjamanagement {
 
         Map<String, Long> eventCounts = calculate(logs);
 
-        String outputFilePath = "C:/Users/silic/IdeaProjects/RESSilionAndreiPRELAufgabe1/src/ergebnis.txt";
+        String outputFilePath = "C:/Users/silic/IdeaProjects/RESSilionAndreiPRELAufgabe1/src/gesammtzahl.txt";
         saveResultsToFile(eventCounts, outputFilePath);
 
-        System.out.println("Rezultatele au fost salvate în fișierul 'ergebnis.txt'.");
+        System.out.println("Rezultatele au fost salvate în fișierul 'gesammtzahl.txt'.");
     }
 }
