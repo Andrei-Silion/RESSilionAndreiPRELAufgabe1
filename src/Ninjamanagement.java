@@ -9,6 +9,8 @@ import java.io.File;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 
 public class Ninjamanagement {
@@ -48,8 +50,27 @@ public class Ninjamanagement {
         return logs;
     }
 
+    public static void displayFiltered(List<Ninja> logs, int numar) {
+        // Filtrarea mai mare putere
+        List<Ninja> filteredNinja = logs.stream()
+                .filter(ninja -> ninja.getKraftpunkte() >= numar) // Filtrare
+                .collect(Collectors.toList());  // Colectează rezultatele într-o listă
+
+        // Dacă există jocuri filtrate, le afișăm
+        if (!filteredNinja.isEmpty()) {
+            System.out.println("Kraftpunkte >= " + numar + ":");
+            // Iterează prin jocuri și afișează echipele, data și locul jocului
+            for (Ninja ninja : filteredNinja) {
+                System.out.println(ninja.getCharaktername());
+            }
+        } else {
+            System.out.println("Keine gefunden.");
+        }
+    }
+
     public static void main(String[] args) {
         Ninjamanagement manager = new Ninjamanagement();
+        Scanner scanner = new Scanner(System.in);
 
         // Calea fișierului XML
         String filePath = "C:/Users/silic/IdeaProjects/RESSilionAndreiPRELAufgabe1/src/ninja_events.xml";
@@ -59,5 +80,11 @@ public class Ninjamanagement {
 
         // Afișează toate logurile din listă
         logs.forEach(System.out::println);
+
+        System.out.print("Introduceți număr: ");
+        int numar = scanner.nextInt();
+
+
+        displayFiltered(logs, numar);
     }
 }
